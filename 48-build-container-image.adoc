@@ -41,7 +41,7 @@ unauthenticated registry while it is still available.
 
 IMPORTANT: Please replace *Username* with your username. It should be all lowercase and no spaces.
 
-- login to web UI via {{CONSOLE_ADDRESS}}
+- login to web UI via https://console-openshift-console.apps-crc.testing
 - Use the same username and password that assigned to you
 - On the left-hand side menu, select `Home` and then select `Project`
 - Click `Create Project`

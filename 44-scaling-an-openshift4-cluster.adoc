@@ -378,7 +378,7 @@ NOTE: If you did not scale down your machines earlier, you may have too much cap
 ----
 $ oc adm new-project autoscale-example && oc project autoscale-example
 Created project autoscale-example
-Now using project "autoscale-example" on server "{{API_URL}}".
+Now using project "autoscale-example" on server "https://api.crc.testing:6443".
 ----
 
 ==== Open Grafana

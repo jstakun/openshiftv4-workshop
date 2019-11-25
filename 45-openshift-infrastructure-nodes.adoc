@@ -34,7 +34,7 @@ nodes that are reporting in:
 [source,shell]
 ----
 $ oc project default
-Now using project "default" on server {{API_URL}}.
+Now using project "default" on server https://api.crc.testing:6443.
 
 $ oc get nodes --show-labels
 NAME                                         STATUS   ROLES          AGE   VERSION             LABELS

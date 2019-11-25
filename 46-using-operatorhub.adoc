@@ -26,7 +26,7 @@ IMPORTANT: Please replace *Username* with your username
 
 ```
 $ oc new-project mycouchbase-Username
-Now using project "mycouchbase-Username" on server "{{API_URL}}"
+Now using project "mycouchbase-Username" on server "https://api.crc.testing:6443"
 ```
 or create from console
 

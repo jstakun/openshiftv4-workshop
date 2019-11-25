@@ -6,7 +6,7 @@
 In this lab exercise, we will review the OpenShift Web Console.
 Let's take some time to explore our  OCP4 cluster. You now have two options, you can use your local terminal on your laptop, or you can use the browser-based terminal that we provisioned in the previous section. Due to connectivity challenges, you may be forced to use the browser-based one, and for convenience our recommendation would be to use it. If you really want to configure your local client you can do so by using the following instructions to download the command line tooling. You should only do this if you don't want to use the browser-based terminal; make sure you run this on your local laptop and NOT within the web-browser.
 
-Currently using the OC client CLI from {{REDHAT_DOWNLOAD_OC_PORTAL_URL}}. You can
+Currently using the OC client CLI from https://access.redhat.com/downloads/content/290. You can
 check if there is an updated one before running the download instruction.You can
 update the URL accordingly if you like.
 
@@ -14,7 +14,7 @@ update the URL accordingly if you like.
 
 
 ....
-[~] $ wget {{LINUX_CLI_URL}}
+[~] $ wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.2.7/openshift-client-linux-4.2.7.tar.gz
 (...)
 [~] $ tar -zxvf openshift-client-linux-4.1.0.tar.gz
 oc
@@ -30,7 +30,7 @@ e:"2019-05-18T00:35:43Z", GoVersion:"go1.11.5", Compiler:"gc", Platform:"linux/a
 ==== For MacOS:
 
 ....
-[~] $ wget {{MAC_CLI_URL}}
+[~] $ wget https://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.2.7/openshift-client-mac-4.2.7.tar.gz
 (...)
 [~] $ tar zxvf openshift-client-mac-4.1.0.tar.gz
 x oc
@@ -51,16 +51,16 @@ Client Version: version.Info{Major:"4", Minor:"1+", GitVersion:"v4.1.0-201905171
 
 Let's now configure our command line tooling to point to our new cluster.
 Below you'll need to enter the API URI, which will be shown as the "Openshift API for command line 'oc' client".
-OCP4 CLI login require the API URL ({{API_URL}}) not the master URL.
+OCP4 CLI login require the API URL (https://api.crc.testing:6443) not the master URL.
 
 ....
-[~] $ oc login --server {{API_URL}}
+[~] $ oc login --server https://api.crc.testing:6443
 
 The server uses a certificate signed by an unknown authority.
 You can bypass the certificate check, but any data you send to the server could be intercepted by others.
 Use insecure connections? (y/n): y
 
-Authentication required for {{API_URL}} (openshift)
+Authentication required for https://api.crc.testing:6443 (openshift)
 Username: <your username>
 Password: <your password>
 Login successful.
@@ -75,7 +75,7 @@ apiVersion: v1
 clusters:
 - cluster:
     insecure-skip-tls-verify: true
-    server: {{API_URL}}
+    server: https://api.crc.testing:6443
 ...
 ....
 

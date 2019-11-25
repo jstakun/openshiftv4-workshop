@@ -13,7 +13,7 @@ deployments on OpenShift.
 
 IMPORTANT: Please replace *Username* with your username. It should be all lowercase and no spaces.
 
-- login to web UI via {{CONSOLE_ADDRESS}}
+- login to web UI via https://console-openshift-console.apps-crc.testing
 - Use the same username and password that assigned to you
 - On the left-hand side menu, select `Home` and then select `Project`
 - Click `Create Project`
@@ -27,10 +27,10 @@ image::/images/create-project.png[image]
 
 === Deploy your CI/CD tool (Jenkins)
 
-- Login to the cluster via {{API_URL}}
+- Login to the cluster via https://api.crc.testing:6443
 
 ```
-[~]$ oc login {{API_URL}}
+[~]$ oc login https://api.crc.testing:6443
 The server uses a certificate signed by an unknown authority.
 You can bypass the certificate check, but any data you send to the server could be intercepted
 by others.
@@ -96,7 +96,7 @@ jenkins-persistent                              Jenkins service, with persistent
     Run 'oc status' to view your app.
 ```
 
-- Back to web console {{CONSOLE_ADDRESS}}
+- Back to web console https://console-openshift-console.apps-crc.testing
 - Navigate to `Networking` --> `Routes`
 - Click the link under `LOCATION`
 - Click `Advanced`
@@ -132,7 +132,7 @@ clusterrole.rbac.authorization.k8s.io/admin added: "system:serviceaccount:pipeli
 
 NOTE: *pipeline-Username* will be replaced to your project name
 
-- Go back to your web console {{CONSOLE_ADDRESS}}
+- Go back to your web console https://console-openshift-console.apps-crc.testing
 - Navigate to `Build` --> `Build Configs`
 - Click onto `nodejs-sample-pipeline`
 - Click `Actions` dropdown on the top right

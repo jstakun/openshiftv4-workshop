@@ -110,7 +110,7 @@ $ oc apply -f htpasswd-dd-cr.yaml
 
 ==== Configure the Oauth on the Web Console (Option 2)
 
-- Login to OpenShift Console {{CONSOLE_ADDRESS}}
+- Login to OpenShift Console https://console-openshift-console.apps-crc.testing
 - Navigate to `Administration` --> `Cluster Settings`
 - Click `Global Configuration` tab
 - Click `OAuth`

@@ -16,7 +16,7 @@ will be using the `buildimage-Username` that you created in the
 previous labs. Make sure you are switched to that project by using the
 `oc project` command.
 
-- login to web UI via {{CONSOLE_ADDRESS}}
+- login to web UI via https://console-openshift-console.apps-crc.testing
 - Use the same username and password that assigned to you
 - Navigate to `Projects`
 - Click onto the `buildimage-Username`

@@ -5,7 +5,7 @@
 
 Next, let's login to the web-console and ensure that it's working as expected.
 
-- Console URL: {{CONSOLE_ADDRESS}}
+- Console URL: https://console-openshift-console.apps-crc.testing
 - Click `Advance` and Click `proceed...` link on the browser, you should be
 presented with the page to select the authentication providers.
 
