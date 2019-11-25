@@ -47,7 +47,7 @@ IMPORTANT: Please replace *Username* with your username. It should be all lowerc
 - Click `Create Project`
 - Enter *buildimage-Username* as `Name` of the project. The display name and description is optional.
 
-image::create-project.png[image]
+image::/images/create-project.png[image]
 
 - Click `Create`
 

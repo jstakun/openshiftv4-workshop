@@ -19,7 +19,7 @@ IMPORTANT: Please replace *Username* with your username. It should be all lowerc
 - Click `Create Project`
 - Enter *pipeline-Username* as `Name` of the project. The display name and description is optional.
 
-image::create-project.png[image]
+image::/images/create-project.png[image]
 
 - Click `Create`
 
@@ -103,14 +103,14 @@ jenkins-persistent                              Jenkins service, with persistent
 - Click the link where `Proceed to jenkins-...`
 - Click `Log in with OpenShift`
 
-image::jenkins-login.png[image]
+image::/images/jenkins-login.png[image]
 
 - Click `htpasswd`
 - Login using your user name
 - Click `Allow selected permissions`
 - You now login the Jenkins console
 
-image::jenkins.png[image]
+image::/images/jenkins.png[image]
 
 === Pipeline setup
 
@@ -139,25 +139,25 @@ NOTE: *pipeline-Username* will be replaced to your project name
 - Select `Start Build`
 - Build starts as show below
 
-image::jenkins-viewlog.png[image]
+image::/images/jenkins-viewlog.png[image]
 
 - Click `View Logs`
 - Click `Open Blue Ocean` from the Jenkins Console
 
-image::jenkins-build.png[image]
+image::/images/jenkins-build.png[image]
 
 - Blue Ocean console here (may take a minute to show up):
 
-image::blue-ocean.png[image]
+image::/images/blue-ocean.png[image]
 
 - Go back to OpenShift web console
 
-image::pipeline-build.png[image]
+image::/images/pipeline-build.png[image]
 
 - When Pipleline build is completed, navigate `Network` --> `Route`
 - Click onto the link under `LOCATION` for `nodejs-mongodb-example`
 
-image::pipeline-result.png[image]
+image::/images/pipeline-result.png[image]
 
 Congratulations!! In this lab, you have learnt how to set up and run
 your own CI/CD pipeline on OpenShift.

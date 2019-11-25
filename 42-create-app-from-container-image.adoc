@@ -16,7 +16,7 @@ IMPORTANT: Please replace *Username* with your username
 - Click `Create Project`
 - Enter *web-terminal-Username* as name of the project. The display name and description is optional.
 
-image::create-project.png[image]
+image::/imagescreate-project.png[image]
 
 - Click `Create`
 
@@ -31,17 +31,17 @@ image::create-project.png[image]
 - Scroll down a bit and provide an environment variable.
 - Add `OC_VERSION` and `4.1` as `Environment Variable` section at the bottom on the page.
 
-image::ocp4-deploy-image.png[image]
+image::/images/ocp4-deploy-image.png[image]
 
 - Click `Deploy`
 - On the left-hand side menu, select `Workload` --> `Deployments Configs`
 - Click onto the `workshop-terminal` to see the deployment details here
 
-image::ocp4-dc.png[image]
+image::/imagesocp4-dc.png[image]
 
 - click the tab `Pods` to watch the deployment to complete
 
-image::ocp4-terminal.png[image]
+image::/images/ocp4-terminal.png[image]
 
 - Navigate to `Home` --> `Events` to check status on each events.
 
@@ -61,12 +61,12 @@ Next we need to create a route so we can access this application from the outsid
 - Select `workshop-terminal` from the list of services in the `Service` menu
 - Select the only port in the `Target Port` drop down (should be port 10080 --> 10080), like this:
 
-image::ocp4-route.png[image]
+image::/images/ocp4-route.png[image]
 
 - Click `Create` at the bottom and it will create the route.
 - You will now be presented with a pane that shows the overview of the route:
 
-image::ocp4-route-details.png[image]
+image::/images/ocp4-route-details.png[image]
 
 
 === Accessing the terminal
@@ -76,7 +76,7 @@ which will be the routable URL that will provide access to our workshop terminal
 - Click on the link under `LOCATION` and you will see the in-browser terminal
 session that we can use (if preferred, or mandated due to connectivity issues):
 
-image::run-oc-terminal.png[image]
+image::/imagesrun-oc-terminal.png[image]
 
 
 === Setup OC CLI in web terminal
@@ -92,7 +92,7 @@ $ oc version
 
 NOTE: If normal cut/paste does not work, you can try to use browser's edit menu for cut/paste.
 
-image::ocp4-web-terminal.png[image]
+image::/imagesocp4-web-terminal.png[image]
 
 === To login to a remote server
 

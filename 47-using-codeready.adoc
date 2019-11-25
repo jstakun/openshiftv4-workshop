@@ -25,18 +25,18 @@ oc create clusterrolebinding codeready-operator --clusterrole=codeready-operator
 - Navigate to Catalog -> OperatorHub
 - Enter `CodeReady` in the search field
 
-image::codeready-operator.png[image]
+image::/images/codeready-operator.png[image]
 
 - Click the `CodeReady` operator
 - Click `Install`
 
-image::codeready-subscription.png[image]
+image::/images/codeready-subscription.png[image]
 
 - Select your newly created project as `A specific namespace`
 - Click `Subscribe`
 - Navigate `Installed Operators`
 
-image::codeready-installed.png[image]
+image::/images/codeready-installed.png[image]
 
 - Click onto `Red Hat CodeReady Workspace`
 - Click `Create New`
@@ -78,17 +78,17 @@ spec:
 - Navigate to `Workloads` -> `Pods`
 - You will see Pods as shown below are created
 
-image::codeready-pods.png[image]
+image::/images/codeready-pods.png[image]
 
 - Wait until all pods are `Running`
 - Navigate to `Networking` -> `Routes`
 - Click onto the URL under `LOCATION` for `codeready` route
 
-image::codereadyworkspace.png[image]
+image::/images/codereadyworkspace.png[image]
 
 - Click `Register`
 
-image::codeready-register.png[image]
+image::/images/codeready-register.png[image]
 
 - Enter the following information:
    * First name: Devday
@@ -102,47 +102,47 @@ IMPORTANT: Please replace *Username* with your username
 - Click `Register`
 - Will be prompt to create new workspace
 
-image::codeready-createws.png[image]
+image::/images/codeready-createws.png[image]
 
 - Enter `springboot-Username` as the name of the Workspace
 - Select `springboot` from the list of stacks
 
-image::codeready-git.png[image]
+image::/images/codeready-git.png[image]
 
 - Click `Add or Import project` > Click `Git`
 - Enter URL as `https://github.com/che-samples/web-java-spring-boot`
 - Click `Add`
 - Click `CREATE & OPEN`
 
-image::codeready-starting.png[image]
+image::/images/codeready-starting.png[image]
 
-image::codeready-ready.png[image]
+image::/images/codeready-ready.png[image]
 
 - Click `Project` from the top menu and select `Update Project Configuration`
 
-image::codeready-project.png[image]
+image::/images/codeready-project.png[image]
 
 - Click `Maven`
 - Click `Save`
 
-image::codeready-run.png[image]
+image::/images/codeready-run.png[image]
 
 - Click on the icon circle in red to go to manage command
 - In the manage command pane open the build command folder and double click on the build file
 - Scroll down to `Apply to` session
 
-image::codeready-apply.png[image]
+image::/images/codeready-apply.png[image]
 
 - Change `Applicable` to `Yes` by click where the red circle is
 - Click `Save`
 - Scroll back up to the top
 
-image::codeready-build.png[image]
+image::/images/codeready-build.png[image]
 
 - Click `RUN`
 - Click `+` next to `RUN` menu on the left as show below -> double click onto `Maven`
 
-image::codeready-createrun.png[image]
+image::/images/codeready-createrun.png[image]
 
 - Enter `Build and Run` as the name
 - Replace the line below in the `Command Line` area
@@ -157,15 +157,15 @@ mvn spring-boot:run
 - Click `Save`
 - Scroll back up and click `RUN` the green button
 
-image::codeready-createrun.png[image]
+image::/images/codeready-createrun.png[image]
 
-image::springboot-result.png[image]
+image::/images/springboot-result.png[image]
 
-image::codeready-preview.png[image]
+image::/images/codeready-preview.png[image]
 
 - Click the preview URL in the terminal (indicates in the image)
 
-image::springboot-result.png[image]
+image::/images/springboot-result.png[image]
 
 
 === Create factory
@@ -173,37 +173,37 @@ image::springboot-result.png[image]
 - Continue working on the workspace
 - Click `Workspace` --> `Create Factory`
 
-image::codeready-factory.png[image]
+image::/images/codeready-factory.png[image]
 
 - Enter 'SpringBootSample' as name
 - Click `Create` -> `Close`
 
-image::codeready-factory2.png[image]
+image::/images/codeready-factory2.png[image]
 
 - Click `Workspace` -> 'Stop'
 
-image::codeready-factory3.png[image]
+image::/images/codeready-factory3.png[image]
 
 - Click `Factory (1)` on the left menu
 - Click onto `SpringBootSample`
 - Scroll down and look for `Configure Actions`
 
-image::codeready-sample.png[image]
+image::/images/codeready-sample.png[image]
 
 - Add `Buid and Run` to `runCommand` -> Click `Add`
 - Click `Open`
 
-image::codeready-openfactory.png[image]
+image::/images/codeready-openfactory.png[image]
 
 - Click `Back to Dashboard` at the bottom
 
-image::codereay-fromfactory.png[image]
+image::/images/codereay-fromfactory.png[image]
 
 - Click running workspace under `RECENT WORKSPACES` on the left menu
 - Wait for the workspace to come up
 - You will be able to start building and running the workspace
 
-image::codeready-buildandrun.png[image]
+image::/images/codeready-buildandrun.png[image]
 
 
 

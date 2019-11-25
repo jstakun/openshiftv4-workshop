@@ -40,7 +40,7 @@ web console:
 
 - On the left-hand side menu select 'Catalog' --> 'OperatorHub':
 
-image::operatorhub.png[image]
+image::/images/operatorhub.png[image]
 
 NOTE: Only users with cluster admin privileges can see the Operator Hub interface.
 
@@ -53,7 +53,7 @@ from the dropdown.
 to deploy the Operator on to the cluster. It may take several moments after
 clicking "Install" before the Subscription page shows up:
 
-image::couchbaseOperator.png[image]
+image::/images/couchbaseOperator.png[image]
 
 - Select `mycouchbase-Username` as the specific namespace
 
@@ -85,7 +85,7 @@ have it happen automatically. Choose "Automatic" for now.
 
 - Clicking `Subscribe`, the Couchbase entry will now show that it is "Installed":
 
-image::couchbaseOperator.png[image]
+image::/images/couchbaseOperator.png[image]
 
 IMPORTANT: while the Operator Hub page indicates that the operator is "installed",
 really it is indicating that the operator is configured to be installed. It may
@@ -117,7 +117,7 @@ Firstly can you can do it via the Web Console:
 
 - Now click the "Create" selector and choose "Key/Value Secret":
 
-image::ocp4-secret.png[image]
+image::/images/ocp4-secret.png[image]
 
 - Click "+ Add" at the upper right-hand area of the panel, and then choose
 "Import YAML". Paste the following YAML into the form (the username is
@@ -141,7 +141,7 @@ Notes: Replace the *Username* to your username
 
 - Click create:
 
-image::ocp4-import-secret.png[image]
+image::/images/ocp4-import-secret.png[image]
 
 **Alternatively**, you can create the secret directly using the following command:
 
@@ -158,7 +158,7 @@ a Couchbase cluster from our newly created Operator:
 
 - Navigate `Catalog` --> `Developer Catalog` on the left-hand side.
 
-image::dev-catalog.png[image]
+image::/images/dev-catalog.png[image]
 
 - At the top of the page, again make sure you select `mycouchbase-Username` from the Project dropdown.
 
@@ -173,13 +173,13 @@ configurations of its database (and you would see three different MongoDB tiles)
 
 - Click `Create` to deploy an instance of Couchbase
 
-image::couchdbCluster.png[image]
+image::/images/couchdbCluster.png[image]
 
 - The YAML editor has been pre-filled with a set of defaults for the resulting
 Couchbase cluster. One of those defaults is a reference to the Secret you
 created earlier:
 
-image::couchdb-cr.png[image]
+image::/images/couchdb-cr.png[image]
 
 NOTE: version is 5.5.4-1 instead of the default. (at the bottom)
 
@@ -213,7 +213,7 @@ spec:
 instances running with this Project and should see the one you just created
 has a status of "Creating":
 
-image::creatingCouchdb.png[image]
+image::/images/creatingCouchdb.png[image]
 
 === View the Deployed Resources
 
@@ -248,7 +248,7 @@ cb-example   cb-example-mycouchbase-Username.apps.cluster-3e5f.sandbox580.opentl
 in your secret). If you used different credentials, make sure you put in the
 right ones:
 
-image::couchdb.png[image]
+image::/images/couchdb.png[image]
 
 - You should see 3 nodes listed for each function. We'll dynamically modify this
 in the next section.
@@ -257,7 +257,7 @@ in the next section.
 
 - Click the Servers link on the left-hand side, it should look like the following:
 
-image::couch-server.png[image]
+image::/images/couch-server.png[image]
 
 - As the Operator scales up more Pods, they will automatically join and appear in
 the dashboard. Next, edit your cb-example Couchbase instance to have a server
@@ -332,13 +332,13 @@ and select "Delete Couchbase Cluster":
 
 - Click `Delete`
 
-image::delete-couchdb.png[image]
+image::/images/delete-couchdb.png[image]
 
 - Navigate to `Networking` -> `Routes`
 
 - On the drop-down menu (3 dots) to the right of our `cb-example` route, select `Delete Route`:
 
-image::ocp4-delete-route.png[image]
+image::/images/ocp4-delete-route.png[image]
 
 - Click `Delete`
 - After you delete the cb-example cluster, if you look at the pods quickly
@@ -357,7 +357,7 @@ can click the 3 dots and remove the Subscription for the Couchbase Operator in
 the mycouchbase Project. Now there should be no pods, and you can also delete
 the project if you wish.
 
-image::ocp4-delete-sub.png[image]
+image::/images/ocp4-delete-sub.png[image]
 
 
 Congratulations!! You now know how to install operators and deploy application

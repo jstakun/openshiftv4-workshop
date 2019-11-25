@@ -117,15 +117,15 @@ $ oc apply -f htpasswd-dd-cr.yaml
 - Click `Add` --> `HTPasswd`
 - Enter `htpasswd-dd` as `Name`
 
-image::ocp4-oauth-add.png[image]
+image::/images/ocp4-oauth-add.png[image]
 
 - Click `Browse` to select the htpasswd-dd file that was created previously
 
-image::ocp4-oauth-htpasswd.png[image]
+image::/images/ocp4-oauth-htpasswd.png[image]
 
 - Click `Add`
 
-image::ocp4-oauth-htpasswd.png[image]
+image::/images/ocp4-oauth-htpasswd.png[image]
 
 === Test Authentication
 

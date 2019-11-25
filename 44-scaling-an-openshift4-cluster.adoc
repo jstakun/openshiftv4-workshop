@@ -18,7 +18,7 @@ In this exercise we're going to manually add worker nodes to our cluster:
 
 - Select `openshift-machine-api` from the Project dropdown and you should see the list of machine sets available for the platform:
 
-image::ocp4-machinesets.png[image]
+image::/images/ocp4-machinesets.png[image]
 
 
 - Select one of the machine sets in the list by clicking on the name, e.g. `cluster-3e5f-kqr2b-worker-us-east-2a` (yours will be slightly different)
@@ -29,13 +29,13 @@ NOTE: Depending on the AWS region you chose, you may have several worker machine
 
 - Enter `3` and click Save
 
-image::ocp4-ms-count.png[image]
+image::/images/ocp4-ms-count.png[image]
 
 - Click the Machines tab and see the allocated machines.
 - Click Overview tab, it will let you know when when the machines become ready.
 - Click Machine Sets under Machines on the left-hand side again, you will also see the status of the machines in the set:
 
-image::ocp4-ms-count3.png[image]
+image::/images/ocp4-ms-count3.png[image]
 
 - You may need to wait a few minutes before the machines become ready.
 
@@ -398,7 +398,7 @@ Grafana is configured to use an OpenShift user and inherits permissions of that 
 
 - Click the dropdown on `Home` and choose `Kubernetes / Compute Resources / Cluster`. Leave this browser window open while you start the Job so that you can observe the CPU utilization of the cluster rise:
 
-image::ocp4-grafana.png[image]
+image::/images/ocp4-grafana.png[image]
 
 ==== Force an Autoscaling Event
 
@@ -460,7 +460,7 @@ $ watch -n10 'oc get machines -n openshift-machine-api'
 
 - In Grafana, be sure to click the autoscale-example project in the graphs
 
-image::granfana-autoscale.png[image]
+image::/images/granfana-autoscale.png[image]
 
 
 

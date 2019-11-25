@@ -159,22 +159,22 @@ To scale your application we will edit the `deploymentConfig` to 3.
 - Navigate to `Workloads` --> `Deployment Configs`
 - Click onto `hello` Deployment Configs
 
-image::scale-overview.png[image]
+image::/images/scale-overview.png[image]
 
 - Click the `pencil` icon under `DESIRED COUNT`
 
-image::scale-up.png[image]
+image::/images/scale-up.png[image]
 
 - Click `+` to increase to `3`
 - Click `Save`
 
-image::scale-3pods-overview.png[image]
+image::/images/scale-3pods-overview.png[image]
 
 - Wait for all 3 pods are available
 - Click `Pods`
 - you will see that there are 3 pods running now
 
-image::scale-3pods.png[image]
+image::/images/scale-3pods.png[image]
 
 NOTES: You can also scale up and down from updating the deployment config.
 
@@ -206,7 +206,7 @@ DeploymentConfig "buildimage-user01/hello" has been idled
 idled.
 - Navigate to `Workloads` --> `Pods`
 
-image::idle-pod.png[image]
+image::/images/idle-pod.png[image]
 
 At this point the application is idled, the pods are not running and no
 resources are being used by the application. This doesn't mean that the
